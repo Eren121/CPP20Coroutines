@@ -4,6 +4,7 @@
 #include <optional>
 #include <cassert>
 #include <memory>
+#include <vector>
 #include "suspend_maybe.hpp"
 
 struct promise_type_vars
