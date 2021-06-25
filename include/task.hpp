@@ -75,6 +75,7 @@ private:
     std::coroutine_handle<promise_type> h_;
 
 public:
+    explicit task() = default;
     task(std::coroutine_handle<promise_type> h) : h_(h)
     {
         h_.promise().stack_ = std::make_shared<typename promise_type::stack>();
