@@ -1,7 +1,7 @@
 # CPP20Coroutines
 Header-Only C++20 Coroutines library
 
-This repository aims to demonstrates the capabilities of C++20 coroutines.
+This repository aims to demonstrate the capabilities of C++20 coroutines.
 
 
 # generator<T>
