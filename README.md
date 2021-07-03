@@ -37,4 +37,4 @@ int main()
 
 # task<T>
 
-Generates a single value at the end with a `co_return` expression. A `task` may `co_awaiy` another `task`.
+Generates a single value at the end with a `co_return` expression. A `task` may `co_await` another `task`.
