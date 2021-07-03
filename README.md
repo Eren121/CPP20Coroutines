@@ -22,6 +22,17 @@ generator<int> first_n(int n)
     }
 }
 
+int main()
+{
+    auto gen = first_n(10);
+    
+    for(auto x : gen) // prints "0 1 2 3 4 5 6 7 8 9"
+    {
+        std::cout << x << " ";
+    }
+  
+    std::cout << endl;
+}
 ```
 
 # task<T>
