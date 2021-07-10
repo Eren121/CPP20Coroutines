@@ -149,7 +149,7 @@ public:
     }
 
     template<typename X>
-    bool await_suspend(std::coroutine_handle<X>& p)
+    bool await_suspend(std::coroutine_handle<X> p)
     {
         // --- stack push
         h_.promise().stack_ = p.promise().stack_;
