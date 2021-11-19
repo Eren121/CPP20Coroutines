@@ -19,5 +19,5 @@ target_link_libraries(CPP20CoroutinesTest PRIVATE Catch2::Catch2)
 target_include_directories(CPP20CoroutinesTest PRIVATE src)
 
 
-add_library(CPP20Coroutines include/task.hpp include/suspend_maybe.hpp include/generator.hpp)
+add_library(CPP20Coroutines INTERFACE include/task.hpp include/suspend_maybe.hpp include/generator.hpp)
 target_include_directories(CPP20Coroutines PUBLIC include)
