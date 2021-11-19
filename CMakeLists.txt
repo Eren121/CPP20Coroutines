@@ -16,7 +16,7 @@ FetchContent_Declare(
         GIT_TAG        v2.13.6)
 FetchContent_MakeAvailable(Catch2)
 target_link_libraries(CPP20CoroutinesTest PRIVATE Catch2::Catch2)
-target_include_directories(CPP20CoroutinesTest src)
+target_include_directories(CPP20CoroutinesTest PRIVATE src)
 
 
 add_library(CPP20Coroutines include/task.hpp include/suspend_maybe.hpp include/generator.hpp)
