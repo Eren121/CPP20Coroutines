@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.19)
+cmake_minimum_required(VERSION 3.17)
 project(CPP20Coroutines)
 
 # Do not set CMake variables, you have to set it manually in your own project. This may be compiler-specific until this is widely supported.
@@ -19,7 +19,7 @@ target_link_libraries(CPP20CoroutinesTest PRIVATE Catch2::Catch2)
 target_include_directories(CPP20CoroutinesTest PRIVATE src)
 
 
-add_library(CPP20Coroutines INTERFACE include/task.hpp include/suspend_maybe.hpp include/generator.hpp)
+add_library(CPP20Coroutines INTERFACE)
 target_include_directories(CPP20Coroutines INTERFACE include)
 
 target_link_libraries(CPP20CoroutinesTest PRIVATE CPP20Coroutines)
