@@ -31,7 +31,7 @@ int main()
         std::cout << x << " ";
     }
   
-    std::cout << endl;
+    std::cout << std::endl;
 }
 ```
 
